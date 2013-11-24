@@ -35,7 +35,7 @@ WebcomponentsGenerator.prototype.askFor = function askFor() {
   var prompts = [
     {
       type: 'checkbox',
-      name: 'webComponents',
+      name: 'webcom',
       message: 'Which Web Components do you want to Try, my sexy friend ;) ?  -- (.)_(.) . Boobshere',
       choices: this.webComponents,
     },{
@@ -59,14 +59,13 @@ WebcomponentsGenerator.prototype.askFor = function askFor() {
     // we change a bit this way of doing to automatically do this in the self.prompt() method.
     this.compassBootstrap = hasFeature('compassBootstrap');
 
-    
      var selected = [];
-    _(answers.webComponents).forEach(function(answ, indx){
-       selected.push(_.filter(this.webComponents, { value: answ }));
+     var webcomps = this.webComponents;
+    _(answers.webcom).forEach(function(answ, indx){
+       selected.push((_.filter(webcomps, { value: answ }))[0]);
     });
     
     this.selectedComponents = selected;
-    console.log(this.selectedComponents);
 
     cb();
   }.bind(this));
@@ -164,7 +163,7 @@ function getComponents (){
       "value": "ninja-presentation",
       "version" : "~0.1.1",
       "name": "Ninja Presentations (They are great)",
-      "checked": "true",
+      "checked": true,
       "info" : "https://github.com/viniciusalmeida/ninja-presentation"
     },
      {
@@ -172,7 +171,7 @@ function getComponents (){
       "value": "x-pokemon",
       "version" : "*",
       "name": "x-pokemon :o displays a pokemon",
-      "checked": "false",
+      "checked": false,
       "info": "https://github.com/passy/x-pokemon"
     }
   ]}
