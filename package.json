@@ -1,6 +1,6 @@
 {
   "name": "generator-webcomponents",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A generator importing and using webcomponents",
   "keywords": [
     "yeoman-generator"
