@@ -45,14 +45,12 @@
             <div class="row marketing">
                 <div class="col-lg-6">
                     
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
                     <% if (selectedComponents) { %>
+                     <h4>Webcomponents</h4>
                         <p>You have chosen this components to be tested ;)</p>
                         <ul>
                         <% for(var i = 0; i<selectedComponents.length; i++){ %>
-                                    <li src="<%= selectedComponents[i].name %>">
+                                    <li><%= selectedComponents[i].name %>
                                         <ul>
                                             <li><a href="<%= selectedComponents[i].info %>">How to use it</a></li>
                                         </ul>
@@ -61,6 +59,11 @@
                         <% } %>
                         </ul>
                     <% } %>
+                    
+                    <h4>Bootstrap</h4>
+                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+
+
 
                 </div>
             </div>
@@ -78,7 +81,7 @@
                 <p>You have chosen this components to be tested ;)</p>
                 <ul>
                 <% for(var i = 0; i<selectedComponents.length; i++){ %>
-                    <li src="<%= selectedComponents[i].name %>"></li>
+                    <li><%= selectedComponents[i].name %></li>
                 <% } %>
                 </ul>
             <% } else { %>
