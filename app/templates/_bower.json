@@ -1,0 +1,14 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "dependencies": {<% if (selectedComponents) { 
+        for(var i = 0; i<selectedComponents.length; i++){ %>
+                "<%= selectedComponents[i].value %>": "<%= selectedComponents[i].version %>",
+       <% }%>
+    <% } %><% if (compassBootstrap) { %>
+    "sass-bootstrap": "~3.0.0",<% } %>
+    "jquery": "~1.10.2",
+    "polymer": "*"
+  },
+  "devDependencies": {}
+}

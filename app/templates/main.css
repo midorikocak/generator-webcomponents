@@ -1,0 +1,36 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #474747;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 1.3em;
+    color: rgb(41, 209, 41);
+}
+
+.intro{
+    text-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
