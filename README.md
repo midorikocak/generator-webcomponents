@@ -1,6 +1,7 @@
 # generator-webcomponents [![Build Status](https://secure.travis-ci.org/rafinskipg/generator-webcomponents.png?branch=master)](https://travis-ci.org/rafinskipg/generator-webcomponents)
 
-A generator for testing webcomponents with [Yeoman](http://yeoman.io).
+A generator for testing existing webcomponents with [Yeoman](http://yeoman.io).
+It downloads and lists all existing components in customelements.io
 
 ![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)
 
