@@ -1,7 +1,8 @@
 # generator-webcomponents [![Build Status](https://secure.travis-ci.org/rafinskipg/generator-webcomponents.png?branch=master)](https://travis-ci.org/rafinskipg/generator-webcomponents)
 
 A generator for testing webcomponents with [Yeoman](http://yeoman.io).
-![](http://customelements.io/img/logo.png)
+
+![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)
 
 ## I want to play, Right now!
 
@@ -21,7 +22,7 @@ Voilá!
 * [ninja-presentation](https://github.com/viniciusalmeida/ninja-presentation)
 * [x-pokemon](https://github.com/passy/x-pokemon)
 
-![](http://customelements.io/img/logo.png)
+![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)
 
 
 ### Didn't understand a sh*t? : What is Yeoman?
