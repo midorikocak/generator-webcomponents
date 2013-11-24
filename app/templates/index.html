@@ -15,12 +15,10 @@
         <!-- endbuild -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
         <% if (selectedComponents) { %>
-        <!-- build:js scripts/vendor/gamelibrary.js -->
-        <% for(var i = 0; i<selectedComponents.length; i++){ %>
+            <% for(var i = 0; i<selectedComponents.length; i++){ %>
                     <link rel='import' src='<%= selectedComponents[i].src %>'>
-           <% }%>
+            <% } %>
         <% } %>
-        <!-- endbuild --><% } %>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -39,9 +37,9 @@
             </div>
 
             <div class="jumbotron intro">
-                <h1>GAME GENERATOR!</h1>
-                <p class="lead"><%= gameLibrary.name %></p>
-                <p><a class="btn btn-lg btn-success" href="#">Dev Games!</a></p>
+                <h1>Web COMPONENTS!</h1>
+                <p class="lead">waaahh</p>
+                <p><a class="btn btn-lg btn-success" href="#">A button that does nothing!! waah</a></p>
             </div>
 
             <div class="row marketing">
@@ -51,17 +49,18 @@
                     <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
 
                     <% if (selectedComponents) { %>
-                    <p>You have chosen this components to be tested ;)</p>
-                    <ul>
-                    <% for(var i = 0; i<selectedComponents.length; i++){ %>
-                                <li src="<%= selectedComponents[i].name %>">
-                                    <ul>
-                                        <li><a href="<%= selectedComponents[i].info %>">How to use it</a></li>
-                                    </ul>
-                                </li>
-                       <% }%>
+                        <p>You have chosen this components to be tested ;)</p>
+                        <ul>
+                        <% for(var i = 0; i<selectedComponents.length; i++){ %>
+                                    <li src="<%= selectedComponents[i].name %>">
+                                        <ul>
+                                            <li><a href="<%= selectedComponents[i].info %>">How to use it</a></li>
+                                        </ul>
+                                    </li>
+                       
+                        <% } %>
+                        </ul>
                     <% } %>
-                    </ul><% } %>
 
                 </div>
             </div>
@@ -76,13 +75,13 @@
           <h1>Webcomponents!!</h1>
           
           <% if (selectedComponents) { %>
-            <p>You have chosen this components to be tested ;)</p>
-            <ul>
-            <% for(var i = 0; i<selectedComponents.length; i++){ %>
-                <li src="<%= selectedComponents[i].name %>"></li>
-            <% }%>
-            
-            </ul><% } else { %>
+                <p>You have chosen this components to be tested ;)</p>
+                <ul>
+                <% for(var i = 0; i<selectedComponents.length; i++){ %>
+                    <li src="<%= selectedComponents[i].name %>"></li>
+                <% } %>
+                </ul>
+            <% } else { %>
                 <h2>You selected... NOTHING (.)(.).. Got boobs instead</h2>
             <% }  %>
 

@@ -60,11 +60,12 @@ WebcomponentsGenerator.prototype.askFor = function askFor() {
     this.compassBootstrap = hasFeature('compassBootstrap');
 
     
-    this.selectedComponents = [];
+     var selected = [];
     _(answers.webComponents).forEach(function(answ, indx){
-       this.selectedComponents.push(_.filter(this.webComponents, { value: answ }));
+       selected.push(_.filter(this.webComponents, { value: answ }));
     });
     
+    this.selectedComponents = selected;
     console.log(this.selectedComponents);
 
     cb();
