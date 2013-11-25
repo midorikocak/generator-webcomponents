@@ -8,11 +8,11 @@ This generator allows you to easy download the third party components from custo
 
 ## I want to play, Right now!
 
-Run 
+Run
 `````
 npm install -g generator-webcomponents
 ``````
-And then 
+And then
 ``````
 yo webcomponents
 ``````
@@ -30,7 +30,7 @@ Voilá!
 
 Basically they are pieces of html with hidden javascript code, that allows you to include only the HTML and have full functional elements.
 
-Here is a list of articles related to webcomponents : 
+Here is a list of articles related to webcomponents :
 
 [Building webapps with yeoman and polymer - By Addy Osmani](http://www.html5rocks.com/en/tutorials/webcomponents/yeoman/?redirect_from_locale=es)
 
@@ -40,7 +40,7 @@ Here is a list of articles related to webcomponents :
 
 We need the following basics to deliver a 1.0.0 version:
 
-* Adding all the components from webcomponents.io
+* Adding all the components from customelements.io
 * Display a snippet with the code of the selected components you downloaded.
 * Add more doocumentation
 

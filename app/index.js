@@ -28,7 +28,7 @@ util.inherits(WebcomponentsGenerator, yeoman.generators.Base);
 WebcomponentsGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
-  console.log(this.webComponents);
+  //console.log(this.webComponents);
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
@@ -64,7 +64,7 @@ WebcomponentsGenerator.prototype.askFor = function askFor() {
     _(answers.webcom).forEach(function(answ, indx){
        selected.push((_.filter(webcomps, { value: answ }))[0]);
     });
-    
+
     this.selectedComponents = selected;
 
     cb();
@@ -116,6 +116,10 @@ WebcomponentsGenerator.prototype.mainStylesheet = function mainStylesheet() {
   } else {
     this.copy('main.css', 'app/styles/main.css');
   }
+};
+
+WebcomponentsGenerator.prototype.mainJs = function mainJs() {
+  this.copy('main.js', 'app/scripts/main.js');
 };
 
 WebcomponentsGenerator.prototype.writeIndex = function writeIndex() {
