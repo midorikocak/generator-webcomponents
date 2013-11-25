@@ -1,7 +1,8 @@
 # generator-webcomponents [![Build Status](https://secure.travis-ci.org/rafinskipg/generator-webcomponents.png?branch=master)](https://travis-ci.org/rafinskipg/generator-webcomponents)
 
 A generator for testing existing webcomponents with [Yeoman](http://yeoman.io).
-It downloads and lists all existing components in customelements.io
+
+This generator allows you to easy download the third party components from customelements.io and try them.
 
 ![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)
 
@@ -25,6 +26,23 @@ Voilá!
 
 ![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)
 
+## What are webcomponents?
+
+Basically they are pieces of html with hidden javascript code, that allows you to include only the HTML and have full functional elements.
+
+Here is a list of articles related to webcomponents : 
+
+[Building webapps with yeoman and polymer - By Addy Osmani](http://www.html5rocks.com/en/tutorials/webcomponents/yeoman/?redirect_from_locale=es)
+
+[w3c webcomponents spec](http://www.w3.org/TR/2013/WD-components-intro-20130606/)
+
+## RoadMap for contributions
+
+We need the following basics to deliver a 1.0.0 version:
+
+* Adding all the components from webcomponents.io
+* Display a snippet with the code of the selected components you downloaded.
+* Add more doocumentation
 
 ### Didn't understand a sh*t? : What is Yeoman?
 
