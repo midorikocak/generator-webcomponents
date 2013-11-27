@@ -4,6 +4,8 @@ A generator for testing existing webcomponents with [Yeoman](http://yeoman.io).
 
 This generator allows you to easy download the third party components from customelements.io and try them.
 
+![](http://www.image-upload.net/di/MO2F/screen.png)
+
 ![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)![](http://customelements.io/img/logo.png)
 
 ## I want to play, Right now!
