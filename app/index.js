@@ -36,7 +36,7 @@ WebcomponentsGenerator.prototype.askFor = function askFor() {
     {
       type: 'checkbox',
       name: 'webcom',
-      message: 'Which Web Components do you want to Try, my sexy friend ;) ?  -- (.)_(.) . Boobshere',
+      message: 'Which Web Components do you want to Try, my friend?\n ;) \n W E B \n C O M P O N E N T S\n',
       choices: this.webComponents,
     },{
       type: 'checkbox',
@@ -63,6 +63,9 @@ WebcomponentsGenerator.prototype.askFor = function askFor() {
      var webcomps = this.webComponents;
     _(answers.webcom).forEach(function(answ, indx){
        selected.push((_.filter(webcomps, { value: answ }))[0]);
+    });
+    _.each(selected, function(item, index){
+      selected[index].snippet = _.escape(item.snippet);
     });
 
     this.selectedComponents = selected;
@@ -119,7 +122,7 @@ WebcomponentsGenerator.prototype.mainStylesheet = function mainStylesheet() {
 };
 
 WebcomponentsGenerator.prototype.mainJs = function mainJs() {
-  this.copy('main.js', 'app/scripts/main.js');
+  this.template('main.js', 'app/scripts/main.js');
 };
 
 WebcomponentsGenerator.prototype.writeIndex = function writeIndex() {
@@ -168,7 +171,8 @@ function getComponents (){
       "version" : "~0.1.1",
       "name": "Ninja Presentations (They are great)",
       "checked": true,
-      "info" : "https://github.com/viniciusalmeida/ninja-presentation"
+      "info" : "https://github.com/viniciusalmeida/ninja-presentation",
+      "snippet": "\n<ninja-presentation>\n    <slide>\n       <h1>Is very simple, huh?</h1>\n    </slide>\n</ninja-presentation>"
     },
      {
       "src" : "bower_components/x-pokemon/x-pokemon.html",
@@ -176,7 +180,8 @@ function getComponents (){
       "version" : "*",
       "name": "x-pokemon :o displays a pokemon",
       "checked": false,
-      "info": "https://github.com/passy/x-pokemon"
+      "info": "https://github.com/passy/x-pokemon",
+      "snippet": '<x-pokemon name="pikachu"></x-pokemon>'
     }
   ]}
 }

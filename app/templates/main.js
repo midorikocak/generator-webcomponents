@@ -1,1 +1,1 @@
-//your JS code here
+console.log('Hi!');
